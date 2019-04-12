@@ -96,4 +96,31 @@ $(document).ready(function () {
         $("#posts").append(post)
     })
 
+
+    //Selector del Tema
+    var theme =$("#theme");
+    $("#toGreen").click(function(){
+        theme.attr("href", "../css/green.css")
+    })
+ 
+    $("#toRed").click(function(){
+        theme.attr("href", "../css/red.css")
+    })
+  
+    $("#toBlue").click(function(){
+        theme.attr("href", "../css/blue.css")
+    })
+
+
+    //Scroll
+
+    $(".upPage").click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        },500);
+
+        return false;
+    })
+
 });
