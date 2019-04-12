@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto con JS y jQuery</title>
-
+    
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
+    
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.min.css">
-    <script src="./jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+    <!-- MomentJS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+
+    <!-- Mis Scripts -->
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -26,29 +33,36 @@
     <section id="global">
         <header>
             <div id="logo">
-                Proyecto JS - jQuery
+                <h1> Proyecto JS/jQ</h1>
             </div>
-            <navbar>
-                <ul id="menu">
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Reloj</a></li>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            </navbar>
+            </nav>
         </header>
 
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="/img/hojas.jpg" title="Hojas"></div>
+                <div><img src="/img/rojo.jpg" title="Rojo"></div>
+                <div><img src="/img/cielo.jpg" title="Cielo"></div>
+            </div>
         </div>
 
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Titulo del Artiulo</h2>
-                    <span>
-                        Fecha de publicación
-                    </span>
+               <!-- Carga de Posts desde JSON en js con jQuery -->
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>Quien soy?</span></h4>
+                    <img src="./img/caracol.jpg">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet dui at mauris
                         tristique, vel semper nisi fermentum. Pellentesque lobortis tristique libero nec porta. Etiam
@@ -56,39 +70,23 @@
                         ex vel elit. Aliquam imperdiet magna eget tristique congue. Aliquam nec leo nunc. Etiam ornare
                         vehicula nunc eget condimentum. Proin rutrum, diam sed congue congue, lorem nisi tincidunt nisi,
                         ut tempor lectus libero viverra velit. Donec gravida dapibus venenatis.
-
-                        Sed euismod condimentum ipsum eu rutrum. Pellentesque non imperdiet mauris. Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras accumsan mi at urna
-                        pellentesque, sit amet dignissim lacus aliquet. Duis vulputate, risus non condimentum mollis,
-                        ipsum augue dapibus diam, vel luctus justo nunc eget nibh. Vestibulum sodales varius leo, quis
-                        mollis dui iaculis auctor. Aliquam neque erat, egestas sit amet odio ac, vehicula suscipit nisi.
-                        Maecenas ullamcorper, magna et consequat luctus, enim tortor convallis sapien, sit amet
-                        tincidunt justo enim vel urna.
-
-                        Aliquam pulvinar bibendum ipsum in molestie. Nam eu velit at lacus rhoncus porta. Suspendisse
-                        lacinia tempor dignissim. Cras ac purus ac velit aliquet porta nec ac arcu. Vivamus in cursus
-                        urna, at sodales libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos. Suspendisse at aliquet urna, id pretium ligula.
-
-                        Praesent dui turpis, fringilla vitae metus in, aliquet accumsan neque. Sed vulputate eget sapien
-                        pharetra efficitur. Mauris velit sem, malesuada at interdum non, aliquet sed tortor. Phasellus
-                        efficitur metus diam, vel scelerisque est gravida vitae. Aliquam iaculis mollis elit eu mollis.
-                        Sed sit amet gravida ex. Integer facilisis elit sed enim vestibulum fermentum. Ut in augue nunc.
-                        Aliquam consequat commodo nisl id egestas. Cras dictum eu magna quis semper. Morbi justo erat,
-                        consequat ut fermentum nec, viverra in ante.
-
-                        Praesent venenatis nulla eget sapien laoreet ultricies. Suspendisse nibh sapien, gravida sed
-                        fermentum vitae, feugiat vitae ligula. Duis id blandit est. Vestibulum scelerisque orci sit amet
-                        ex ullamcorper finibus. Curabitur dignissim, elit id suscipit suscipit, magna purus eleifend
-                        est, vitae convallis velit odio pharetra metus. Pellentesque sit amet felis nunc. Phasellus
-                        libero arcu, maximus vulputate mollis at, dictum blandit quam.
                     </p>
-                </article>
-            </div>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" name="pass">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
 
-            <sidebar id="sidebar">
-
-            </sidebar>
+            </aside>
+            <div class="clearfix"></div>
 
 
         </section>
@@ -96,11 +94,10 @@
     </section>
 
     <footer>
-        Practica de jQuery 
+        Practica de jQuery
     </footer>
 
 
-    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,196 @@
-body{
-    background: red;
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+
+#global {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding: 35px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    background: #235E3D;
+    color: white;
+    text-align: center;
+    width: 450px;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 75px;
+    text-transform: uppercase;
+
+}
+
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+#menu ul {
+    line-height: 46px;
+    list-style: none;
+}
+
+
+#menu ul li {
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover {
+    background: #235E3D;
+
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#posts {
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.post {
+    padding: 7px;
+}
+
+.post h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.post .date {
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.buttonMore {
+
+    font-size: 12px;
+    text-align: center;
+    width: 55px;
+    display: block;
+    background: #235E3D;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+
+#sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 35%;
+    float: right;
+
+}
+
+#sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align:  center;
+    line-height: 10px;
+    color: #333;
+    background: url('../img/lines.png') repeat-x;
+}
+
+#sidebar h4 span{
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img {
+    width: 100%;
+}
+
+#sidebar p {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+
+    padding: 5px;
+    border-radius: 2px;
+    border:1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+form input[type="submit"] {
+    font-size: 12px;
+    text-align: center;
+    background: #235E3D;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+    border: 1px solid #235E3D;
+    cursor: pointer;
+
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 40px;
+    background: rgba(51,51,51,0.25);
+    margin: 0px auto;
+    width: 67%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;
 }
