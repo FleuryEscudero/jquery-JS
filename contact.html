@@ -6,22 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto con JS y jQuery</title>
-    
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/green.css" id="theme">
 
-    
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!-- MomentJS -->
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
 
@@ -53,17 +47,37 @@
             </nav>
         </header>
 
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="/img/hojas.jpg" title="Hojas"></div>
-                <div><img src="/img/rojo.jpg" title="Rojo"></div>
-                <div><img src="/img/cielo.jpg" title="Cielo"></div>
-            </div>
-        </div>
-
         <section id="content">
-            <div id="posts">
-               <!-- Carga de Posts desde JSON en js con jQuery -->
+            <div id="box">
+                <!-- Carga de reloj-->
+                <div id="form">
+                    <h2>Contacto</h2>
+                    <hr>
+                    <form id="contactForm">
+
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Nombre">
+                        <label for="surname">Apellido</label>
+                        <input type="text" placeholder="Apellidos">
+                        <label for="email">Email</label>
+                        <input type="Email" placeholder="Email">
+                        <label for="sex">Sexo</label>
+                        <select name="sex" id="sex">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                        <br>
+                        <label for="birthdate">Fecha de Nacimiento</label>
+                        <input type="text" placeholder="Fecha de Nacimiento">
+                        <label for="age">Edad</label>
+                        <input type="text" placeholder="Edad">
+
+                        <input type="submit" value="Enviar">
+
+                    </form>
+
+                </div>
+
             </div>
 
             <aside id="sidebar">
@@ -81,9 +95,9 @@
                         <label for="name">Nombre</label>
                         <input type="text" name="name" id="iName">
                         <label for="email">Email</label>
-                        <input type="email" name="email" >
+                        <input type="email" name="email">
                         <label for="pass">Contraseña</label>
-                        <input type="password" name="pass" >
+                        <input type="password" name="pass">
                         <input type="submit" value="Entrar">
                     </form>
                 </div>
